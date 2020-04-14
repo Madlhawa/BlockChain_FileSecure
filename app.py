@@ -17,13 +17,17 @@ def generateHash(file):
 
 def generateBlock(previousHash,file):
     data = generateHash(file)
-    
+
     #create the block with 
     dic = {'data':data,'previousHash':previousHash}
     dic_package = json.dumps(dic).encode()
     Hash = hashlib.sha256(dic_package).hexdigest()
     block = {'Hash':Hash,'data':data, 'name':file, 'previousHash':previousHash}
     return block
+
+#main
+fileName = input('')
+
 
 #first block
 genesisBlock = generateBlock(0,'doc1.odt')
