@@ -35,3 +35,7 @@ pip3 install sqlite
 pip3 install requests
 pip3 install flask_wtf
 pip3 install flask-sqlalchemy
+
+from web import db
+from web import Record, Part
+db.create_all()

@@ -12,4 +12,5 @@ class maintainenceForm(FlaskForm):
     description = StringField('description', validators = [DataRequired()])
     part_supplier = StringField('part_supplier', validators = [DataRequired()])
     part_tracking = StringField('part_tracking', validators = [DataRequired()])
+    date_edited = StringField('date_edited', validators = [DataRequired()])
     submit = SubmitField('Submit')
