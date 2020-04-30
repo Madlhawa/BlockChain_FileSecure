@@ -1,0 +1,74 @@
+{% extends "layout.html"%}
+{% block content %}
+    {% for record in record %}
+        <article class="media content-section">
+            <div class="media-body"> 
+                <h1 style="text-align: center;">Main</h1>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Date</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.date }} readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">aircraft_id</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.aircraft_id }} readonly>
+                        </div>
+                    </div>
+        
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">aircraft_make</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.aircraft_make }} readonly>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">aircraft_owner</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.aircraft_owner }} readonly>
+                        </div>
+                    </div>
+        
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">mechanic</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.mechanic }} readonly>
+                        </div>
+                    </div>
+        
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">station</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.station }} readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">description</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.description }} readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">part_supplier</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.part_supplier }} readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">part_tracking</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder={{ record.part_tracking_id }} readonly>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+        </article>
+   
+            
+    {% endfor %}
+{% endblock content %}

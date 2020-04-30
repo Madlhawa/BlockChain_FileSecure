@@ -83,13 +83,5 @@ try:
 except HTTPError as e:
     response = e.file
 
-
-
 output = open('intkey.batches', 'wb')
 output.write(batch_list_bytes)
-
-
-curl --request POST \
-    --header "Content-Type: application/octet-stream" \
-    --data-binary @intkey.batches \
-    "http://localhost:8008/batches"
